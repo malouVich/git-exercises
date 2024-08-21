@@ -8,12 +8,24 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
 
-
-        }
+/*
+Write a program that prints the numbers from 1 to 100.
+But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”.
+For numbers which are multiples of both three and five print “FizzBuzz”.
+ */
+     for(int i = 0; i<=100; i++){
+         if(i % 3 == 0 || i % 5 == 0) {
+             if (i % 3 == 0) {
+                 System.out.println("Fizz");
+             }
+             if(i % 5 ==0){
+                 System.out.println("Buzz");
+             }
+             if(i % 3 == 0 && i % 5 == 0){
+                 System.out.println("FizzBuzz");
+             }
+         }else System.out.println(i);
+     }
     }
 }
